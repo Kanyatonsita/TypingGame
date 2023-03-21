@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Bakgrunden för 3d988988607b1053200cc052e8dd7bfb togs bort.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
