@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5FDAFF6329C8B10F0052BE5E /* DifficultyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAFF6229C8B10F0052BE5E /* DifficultyValue.swift */; };
+		5FDAFF6529C9B2930052BE5E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAFF6429C9B2930052BE5E /* GameViewController.swift */; };
+		5FDAFF6729C9B6340052BE5E /* ResultGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAFF6629C9B6340052BE5E /* ResultGameViewController.swift */; };
 		5FE4376529C84E3C00D08687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4376429C84E3C00D08687 /* AppDelegate.swift */; };
 		5FE4376729C84E3C00D08687 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4376629C84E3C00D08687 /* SceneDelegate.swift */; };
 		5FE4376929C84E3C00D08687 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4376829C84E3C00D08687 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		5FDAFF6229C8B10F0052BE5E /* DifficultyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyValue.swift; sourceTree = "<group>"; };
+		5FDAFF6429C9B2930052BE5E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5FDAFF6629C9B6340052BE5E /* ResultGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultGameViewController.swift; sourceTree = "<group>"; };
 		5FE4376129C84E3C00D08687 /* TypingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE4376429C84E3C00D08687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FE4376629C84E3C00D08687 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				5FE4376D29C84E3D00D08687 /* Assets.xcassets */,
 				5FE4376F29C84E3D00D08687 /* LaunchScreen.storyboard */,
 				5FE4377229C84E3D00D08687 /* Info.plist */,
+				5FDAFF6429C9B2930052BE5E /* GameViewController.swift */,
+				5FDAFF6629C9B6340052BE5E /* ResultGameViewController.swift */,
 			);
 			path = TypingGame;
 			sourceTree = "<group>";
@@ -261,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FDAFF6529C9B2930052BE5E /* GameViewController.swift in Sources */,
 				5FDAFF6329C8B10F0052BE5E /* DifficultyValue.swift in Sources */,
 				5FE4376929C84E3C00D08687 /* ViewController.swift in Sources */,
+				5FDAFF6729C9B6340052BE5E /* ResultGameViewController.swift in Sources */,
 				5FE4376529C84E3C00D08687 /* AppDelegate.swift in Sources */,
 				5FE4376729C84E3C00D08687 /* SceneDelegate.swift in Sources */,
 			);

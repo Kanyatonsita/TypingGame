@@ -32,6 +32,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     
     @IBAction func goToGameButton(_ sender: UIButton) {
+        
          performSegue(withIdentifier: segueIdGoToGame, sender: self)
     }
     
@@ -55,6 +56,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
        // print("\(row) : \(difficulty[row])")
+    }
+    
+    @IBAction func unwindToStart(segue: UIStoryboardSegue) {
+        
     }
 
 }
