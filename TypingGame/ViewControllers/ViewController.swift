@@ -32,7 +32,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     
     @IBAction func goToGameButton(_ sender: UIButton) {
-        
          performSegue(withIdentifier: segueIdGoToGame, sender: self)
     }
     

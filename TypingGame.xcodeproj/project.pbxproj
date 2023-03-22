@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FDAFF6329C8B10F0052BE5E /* DifficultyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAFF6229C8B10F0052BE5E /* DifficultyValue.swift */; };
+		5F4B560029CA426D00515107 /* WordEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B55FF29CA426D00515107 /* WordEntryModel.swift */; };
+		5F4B560229CA439400515107 /* Wordle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4B560129CA439400515107 /* Wordle.swift */; };
 		5FDAFF6529C9B2930052BE5E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAFF6429C9B2930052BE5E /* GameViewController.swift */; };
 		5FDAFF6729C9B6340052BE5E /* ResultGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAFF6629C9B6340052BE5E /* ResultGameViewController.swift */; };
 		5FE4376529C84E3C00D08687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4376429C84E3C00D08687 /* AppDelegate.swift */; };
@@ -39,7 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5FDAFF6229C8B10F0052BE5E /* DifficultyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyValue.swift; sourceTree = "<group>"; };
+		5F4B55FF29CA426D00515107 /* WordEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEntryModel.swift; sourceTree = "<group>"; };
+		5F4B560129CA439400515107 /* Wordle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordle.swift; sourceTree = "<group>"; };
 		5FDAFF6429C9B2930052BE5E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5FDAFF6629C9B6340052BE5E /* ResultGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultGameViewController.swift; sourceTree = "<group>"; };
 		5FE4376129C84E3C00D08687 /* TypingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F4B55FB29CA402A00515107 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FE4376829C84E3C00D08687 /* ViewController.swift */,
+				5FDAFF6629C9B6340052BE5E /* ResultGameViewController.swift */,
+				5FDAFF6429C9B2930052BE5E /* GameViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5F4B55FC29CA406600515107 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B55FF29CA426D00515107 /* WordEntryModel.swift */,
+				5F4B560129CA439400515107 /* Wordle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5FE4375829C84E3C00D08687 = {
 			isa = PBXGroup;
 			children = (
@@ -105,16 +126,14 @@
 		5FE4376329C84E3C00D08687 /* TypingGame */ = {
 			isa = PBXGroup;
 			children = (
+				5F4B55FC29CA406600515107 /* Model */,
+				5F4B55FB29CA402A00515107 /* ViewControllers */,
 				5FE4376429C84E3C00D08687 /* AppDelegate.swift */,
 				5FE4376629C84E3C00D08687 /* SceneDelegate.swift */,
-				5FE4376829C84E3C00D08687 /* ViewController.swift */,
-				5FDAFF6229C8B10F0052BE5E /* DifficultyValue.swift */,
 				5FE4376A29C84E3C00D08687 /* Main.storyboard */,
 				5FE4376D29C84E3D00D08687 /* Assets.xcassets */,
 				5FE4376F29C84E3D00D08687 /* LaunchScreen.storyboard */,
 				5FE4377229C84E3D00D08687 /* Info.plist */,
-				5FDAFF6429C9B2930052BE5E /* GameViewController.swift */,
-				5FDAFF6629C9B6340052BE5E /* ResultGameViewController.swift */,
 			);
 			path = TypingGame;
 			sourceTree = "<group>";
@@ -267,11 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4B560229CA439400515107 /* Wordle.swift in Sources */,
 				5FDAFF6529C9B2930052BE5E /* GameViewController.swift in Sources */,
-				5FDAFF6329C8B10F0052BE5E /* DifficultyValue.swift in Sources */,
 				5FE4376929C84E3C00D08687 /* ViewController.swift in Sources */,
 				5FDAFF6729C9B6340052BE5E /* ResultGameViewController.swift in Sources */,
 				5FE4376529C84E3C00D08687 /* AppDelegate.swift in Sources */,
+				5F4B560029CA426D00515107 /* WordEntryModel.swift in Sources */,
 				5FE4376729C84E3C00D08687 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

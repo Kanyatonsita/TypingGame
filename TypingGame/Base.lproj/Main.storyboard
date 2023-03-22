@@ -145,15 +145,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wordsLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tii-ha-EYy">
-                                <rect key="frame" x="72" y="197" width="248" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="scoreLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDh-aB-E4C">
+                                <rect key="frame" x="16" y="30" width="84" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="scoreLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDh-aB-E4C">
-                                <rect key="frame" x="16" y="30" width="84" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wordLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMy-hB-n4m">
+                                <rect key="frame" x="52" y="184" width="288" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -187,6 +187,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="9Br-jM-UAb"/>
                     <connections>
+                        <outlet property="showScoreLabel" destination="HDh-aB-E4C" id="4bV-Qx-o45"/>
+                        <outlet property="timeLabel" destination="fY6-cy-gXS" id="aQJ-LC-G0T"/>
+                        <outlet property="typeTextField" destination="ClZ-T4-j6b" id="I5R-8j-Xu2"/>
+                        <outlet property="wordLabel" destination="TMy-hB-n4m" id="B4d-hP-a9c"/>
                         <segue destination="jKr-fy-vnM" kind="show" identifier="goToGameOver" id="bDT-f6-TP7"/>
                     </connections>
                 </viewController>
