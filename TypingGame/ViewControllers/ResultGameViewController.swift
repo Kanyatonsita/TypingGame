@@ -10,14 +10,17 @@ import UIKit
 class ResultGameViewController: UIViewController {
     
     @IBOutlet weak var playButtonDesign: UIButton!
+
+    @IBOutlet weak var youScore: UILabel!
     
-    
+    var showYouScor: String?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         playAgainButtonDesign()
+        
+        
         
         
     }

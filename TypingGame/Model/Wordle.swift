@@ -17,6 +17,9 @@ class Wordle {
         add(word: WordEntry(wordle: "Sleep"))
         add(word: WordEntry(wordle: "Mother"))
         add(word: WordEntry(wordle: "School"))
+        add(word: WordEntry(wordle: "Dog"))
+        add(word: WordEntry(wordle: "Cat"))
+        add(word: WordEntry(wordle: "Phone"))
         
     }
     
