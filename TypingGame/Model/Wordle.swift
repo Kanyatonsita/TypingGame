@@ -31,6 +31,6 @@ class Wordle {
     func randomWord() -> WordEntry {
         
         let index = Int.random(in: 0..<words.count)
-        return words [index]
+        return words[index]
     }
 }
