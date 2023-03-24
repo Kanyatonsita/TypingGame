@@ -13,7 +13,7 @@ class ResultGameViewController: UIViewController {
 
     @IBOutlet weak var youScore: UILabel!
     
-    var showYouScor: String?
+    var showYouScor: String = ""
     
     
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class ResultGameViewController: UIViewController {
         playAgainButtonDesign()
         
         
-        
+        youScore.text = "Your \(showYouScor)"
         
     }
     

@@ -12,14 +12,22 @@ class Wordle {
     private var words = [WordEntry]()
     
     init(){
-        add(word: WordEntry(wordle: "Apple"))
-        add(word: WordEntry(wordle: "Banana"))
-        add(word: WordEntry(wordle: "Sleep"))
-        add(word: WordEntry(wordle: "Mother"))
-        add(word: WordEntry(wordle: "School"))
-        add(word: WordEntry(wordle: "Dog"))
-        add(word: WordEntry(wordle: "Cat"))
-        add(word: WordEntry(wordle: "Phone"))
+        add(word: WordEntry(wordle: "Äpple"))
+        add(word: WordEntry(wordle: "Banan"))
+        add(word: WordEntry(wordle: "Sova"))
+        add(word: WordEntry(wordle: "Mamma"))
+        add(word: WordEntry(wordle: "Skola"))
+        add(word: WordEntry(wordle: "Hund"))
+        add(word: WordEntry(wordle: "Katt"))
+        add(word: WordEntry(wordle: "Telefone"))
+        add(word: WordEntry(wordle: "Pappa"))
+        add(word: WordEntry(wordle: "Syster"))
+        add(word: WordEntry(wordle: "Hus"))
+        add(word: WordEntry(wordle: "Bilar"))
+        add(word: WordEntry(wordle: "Skatteverket"))
+        add(word: WordEntry(wordle: "Kamera"))
+        add(word: WordEntry(wordle: "Komplimang"))
+        add(word: WordEntry(wordle: "Skafferi"))
         
     }
     

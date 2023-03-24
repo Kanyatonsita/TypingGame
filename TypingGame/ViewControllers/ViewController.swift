@@ -17,6 +17,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     let segueIdGoToGame = "goToGame"
     
+    var choosenDifficuly = "EASY"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +35,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBAction func goToGameButton(_ sender: UIButton) {
          performSegue(withIdentifier: segueIdGoToGame, sender: self)
+        
     }
     
     func buttonDesign(){
@@ -50,16 +53,23 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
-        return "\(difficulty[row])"
+        choosenDifficuly = difficulty[row]
+        return choosenDifficuly
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-       // print("\(row) : \(difficulty[row])")
+       //print("\(row) : \(difficulty[row])")
     }
     
     @IBAction func unwindToStart(segue: UIStoryboardSegue) {
         
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let gameViewController = segue.destination as? GameViewController {
+            gameViewController.diff = choosenDifficuly
+        }
+    }
 }
 

@@ -9,6 +9,7 @@ import UIKit
 
 class GameViewController: UIViewController {
     
+    let segueIDGOTOGameOver = "goToGameOver"
     
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var typeTextField: UITextField!
@@ -16,7 +17,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var showScoreLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     
-    var countdownTime = 60
+    var countdownTime = 0
     var gameTime: Timer?
     
     var wordList = Wordle()
@@ -24,11 +25,14 @@ class GameViewController: UIViewController {
     
     var score = 0
     
+    var diff = "EASY"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setGameRandomWord()
         
+        timeDiff()
         timeLabel.text = "🕐: \(timeFormat(countdownTime))"
         startTimer()
         
@@ -49,20 +53,17 @@ class GameViewController: UIViewController {
             score += 1
             showScoreLabel.text = "Score: \(score)"
         }
-        //        else if typeTextField.text != randomWord.wordle {
-        //            setGameRandomWord()
-        //            score -= 1
-        //            showScoreLabel.text = "Score: \(score)"
-        //        }
     }
-    
     
     //visa poägn i slut resultat.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-
-
-
+        if segue.identifier == segueIDGOTOGameOver {
+            if let destinationVC = segue.destination as?
+                ResultGameViewController {
+                destinationVC.showYouScor = showScoreLabel.text ?? "0"
+            }
+        }
     }
     
     
@@ -72,6 +73,7 @@ class GameViewController: UIViewController {
         
         if countdownTime == 0 {
             gameTime?.invalidate()
+            performSegue(withIdentifier: segueIDGOTOGameOver, sender: self)
         }
     }
     
@@ -85,8 +87,24 @@ class GameViewController: UIViewController {
         gameTime = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     
+    func timeDiff() {
+        
+        if diff == "EASY" {
+            countdownTime = 65
+        }else if diff == "MEDIUM" {
+            countdownTime = 45
+        }else {
+            countdownTime = 25
+        }
+    }
+    
 }
     
 
    
 
+//        else if typeTextField.text != randomWord.wordle {
+//            setGameRandomWord()
+//            score -= 1
+//            showScoreLabel.text = "Score: \(score)"
+//        }
