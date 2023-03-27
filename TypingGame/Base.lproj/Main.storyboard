@@ -113,13 +113,35 @@
                                     <constraint firstAttribute="height" constant="348" id="sQV-45-v2v"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aL-1V-wT0">
-                                <rect key="frame" x="79" y="353.66666666666669" width="234" height="23.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aL-1V-wT0">
+                                <rect key="frame" x="80" y="349" width="233" height="23.333333333333314"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="234" id="NQg-jc-2Nm"/>
+                                    <constraint firstAttribute="width" constant="233" id="ycW-c2-EFb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You score">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="20" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fX6-Kg-DMp">
+                                <rect key="frame" x="82" y="408" width="229" height="23.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="rWO-0i-Sa4"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Highscore">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -130,15 +152,19 @@
                             <constraint firstItem="Eid-8q-yqV" firstAttribute="bottom" secondItem="zX8-Md-RJF" secondAttribute="bottom" constant="104" id="4K4-El-bs6"/>
                             <constraint firstItem="LJw-DW-geY" firstAttribute="top" secondItem="vMa-OF-vCs" secondAttribute="top" id="Bjo-RT-RMV"/>
                             <constraint firstItem="zX8-Md-RJF" firstAttribute="leading" secondItem="Eid-8q-yqV" secondAttribute="leading" constant="77" id="JXg-fC-Bvu"/>
-                            <constraint firstItem="Eid-8q-yqV" firstAttribute="trailing" secondItem="3aL-1V-wT0" secondAttribute="trailing" constant="80" id="JY5-7w-sjE"/>
-                            <constraint firstItem="3aL-1V-wT0" firstAttribute="leading" secondItem="Eid-8q-yqV" secondAttribute="leading" constant="79" id="U1f-l1-hlf"/>
-                            <constraint firstItem="zX8-Md-RJF" firstAttribute="top" secondItem="3aL-1V-wT0" secondAttribute="bottom" constant="222" id="cNw-Iy-hoc"/>
+                            <constraint firstItem="3aL-1V-wT0" firstAttribute="leading" secondItem="Eid-8q-yqV" secondAttribute="leading" constant="80" id="PUi-ah-Nob"/>
+                            <constraint firstItem="fX6-Kg-DMp" firstAttribute="top" secondItem="3aL-1V-wT0" secondAttribute="bottom" constant="35.670000000000002" id="XwE-Yb-Iya"/>
+                            <constraint firstItem="Eid-8q-yqV" firstAttribute="trailing" secondItem="fX6-Kg-DMp" secondAttribute="trailing" constant="82" id="dGT-ZX-j2G"/>
+                            <constraint firstItem="3aL-1V-wT0" firstAttribute="top" secondItem="LJw-DW-geY" secondAttribute="bottom" constant="1" id="gW4-mX-JeB"/>
+                            <constraint firstItem="fX6-Kg-DMp" firstAttribute="leading" secondItem="Eid-8q-yqV" secondAttribute="leading" constant="82" id="mW9-30-nol"/>
                             <constraint firstItem="LJw-DW-geY" firstAttribute="leading" secondItem="Eid-8q-yqV" secondAttribute="leading" id="mnx-g3-y1s"/>
+                            <constraint firstItem="Eid-8q-yqV" firstAttribute="trailing" secondItem="3aL-1V-wT0" secondAttribute="trailing" constant="80" id="zIW-Zt-DVd"/>
                             <constraint firstItem="LJw-DW-geY" firstAttribute="trailing" secondItem="Eid-8q-yqV" secondAttribute="trailing" id="zdm-rz-J1y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RW3-Tw-hm8"/>
                     <connections>
+                        <outlet property="HighScoreLabel" destination="fX6-Kg-DMp" id="163-fS-cFB"/>
                         <outlet property="playButtonDesign" destination="zX8-Md-RJF" id="Vav-7d-TQX"/>
                         <outlet property="youScore" destination="3aL-1V-wT0" id="Uuh-Bz-9WG"/>
                     </connections>

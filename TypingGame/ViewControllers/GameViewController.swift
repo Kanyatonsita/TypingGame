@@ -24,7 +24,6 @@ class GameViewController: UIViewController {
     var randomWord: WordEntry?
     
     var score = 0
-    
     var diff = "EASY"
     
     override func viewDidLoad() {
@@ -55,17 +54,17 @@ class GameViewController: UIViewController {
         }
     }
     
-    //visa poägn i slut resultat.
+   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == segueIDGOTOGameOver {
             if let destinationVC = segue.destination as?
                 ResultGameViewController {
-                destinationVC.showYouScor = showScoreLabel.text ?? "0"
+                destinationVC.showYouScor = score
+                destinationVC.diffSetting = diff
             }
         }
     }
-    
     
     @objc func updateTimer() {
         countdownTime -= 1
@@ -101,10 +100,4 @@ class GameViewController: UIViewController {
 }
     
 
-   
 
-//        else if typeTextField.text != randomWord.wordle {
-//            setGameRandomWord()
-//            score -= 1
-//            showScoreLabel.text = "Score: \(score)"
-//        }

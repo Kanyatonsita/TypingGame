@@ -12,17 +12,35 @@ class ResultGameViewController: UIViewController {
     @IBOutlet weak var playButtonDesign: UIButton!
 
     @IBOutlet weak var youScore: UILabel!
+    @IBOutlet weak var HighScoreLabel: UILabel!
     
-    var showYouScor: String = ""
-    
+    var showYouScor = 0
+    var diffSetting = ""
+    var hiScore = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         playAgainButtonDesign()
         
         
-        youScore.text = "Your \(showYouScor)"
+        youScore.text = "In setting: \(diffSetting) \nYour score: \(showYouScor)"
         
+        hiScore = UserDefaults.standard.integer(forKey: "HiScore")
+        HighScoreLabel.text = "HighScore: \(hiScore) \nIn setting: \(diffSetting)"
+        
+        showHiScore()
+       
+        
+    }
+    
+    func showHiScore() {
+        
+        if showYouScor > hiScore {
+            hiScore = showYouScor
+            UserDefaults.standard.set(hiScore, forKey: "HiScore")
+            HighScoreLabel.text = "New HighScore: \(hiScore) \nIn setting: \(diffSetting)"
+        }
     }
     
 
