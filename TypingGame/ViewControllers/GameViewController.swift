@@ -89,11 +89,11 @@ class GameViewController: UIViewController {
     func timeDiff() {
         
         if diff == "EASY" {
-            countdownTime = 65
+            countdownTime = 20
         }else if diff == "MEDIUM" {
-            countdownTime = 45
+            countdownTime = 15
         }else {
-            countdownTime = 25
+            countdownTime = 10
         }
     }
     
