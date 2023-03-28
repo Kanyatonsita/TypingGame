@@ -218,18 +218,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bakgrunden för istockphoto-1055492242-170667a togs bort" translatesAutoresizingMaskIntoConstraints="NO" id="lDU-Ac-0gy">
+                                <rect key="frame" x="16" y="527" width="186" height="222"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bakgrunden för istockphoto-1055883492-170667a togs bort" translatesAutoresizingMaskIntoConstraints="NO" id="AqK-ub-JEg">
+                                <rect key="frame" x="199" y="513" width="178" height="236"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gf3-H8-gqu"/>
                         <color key="backgroundColor" red="0.84373048780000004" green="0.82384358950000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="TMy-hB-n4m" firstAttribute="top" secondItem="gf3-H8-gqu" secondAttribute="top" constant="206" id="0si-EB-2tQ"/>
                             <constraint firstItem="gf3-H8-gqu" firstAttribute="trailing" secondItem="TMy-hB-n4m" secondAttribute="trailing" constant="16" id="3BD-d8-gFv"/>
+                            <constraint firstItem="gf3-H8-gqu" firstAttribute="trailing" secondItem="AqK-ub-JEg" secondAttribute="trailing" constant="16" id="8aM-5M-qqF"/>
                             <constraint firstItem="HDh-aB-E4C" firstAttribute="leading" secondItem="Qpe-QF-K6I" secondAttribute="leadingMargin" id="CX1-Za-9ya"/>
+                            <constraint firstItem="AqK-ub-JEg" firstAttribute="top" secondItem="EGz-Xz-tT9" secondAttribute="bottom" constant="76" id="LQH-30-M99"/>
+                            <constraint firstItem="gf3-H8-gqu" firstAttribute="trailing" secondItem="lDU-Ac-0gy" secondAttribute="trailing" constant="191" id="PCV-aj-Hiu"/>
                             <constraint firstItem="gf3-H8-gqu" firstAttribute="bottom" secondItem="EGz-Xz-tT9" secondAttribute="bottom" constant="346" id="Txq-b6-isB"/>
                             <constraint firstItem="fY6-cy-gXS" firstAttribute="top" secondItem="Qpe-QF-K6I" secondAttribute="topMargin" constant="30" id="Vgo-wu-Ajb"/>
                             <constraint firstItem="HDh-aB-E4C" firstAttribute="top" secondItem="Qpe-QF-K6I" secondAttribute="topMargin" constant="30" id="WQL-pS-sgp"/>
+                            <constraint firstItem="gf3-H8-gqu" firstAttribute="bottom" secondItem="AqK-ub-JEg" secondAttribute="bottom" constant="34" id="aBQ-oT-0q4"/>
+                            <constraint firstItem="AqK-ub-JEg" firstAttribute="leading" secondItem="gf3-H8-gqu" secondAttribute="leading" constant="199" id="daA-8a-yAe"/>
                             <constraint firstItem="gf3-H8-gqu" firstAttribute="trailing" secondItem="EGz-Xz-tT9" secondAttribute="trailing" constant="30" id="eFy-gD-5rI"/>
                             <constraint firstItem="TMy-hB-n4m" firstAttribute="leading" secondItem="gf3-H8-gqu" secondAttribute="leading" constant="16" id="hnl-bK-wl6"/>
+                            <constraint firstItem="lDU-Ac-0gy" firstAttribute="top" secondItem="EGz-Xz-tT9" secondAttribute="bottom" constant="90" id="nzH-5r-z3z"/>
+                            <constraint firstItem="lDU-Ac-0gy" firstAttribute="leading" secondItem="gf3-H8-gqu" secondAttribute="leading" constant="16" id="svZ-Vn-rpZ"/>
+                            <constraint firstItem="gf3-H8-gqu" firstAttribute="bottom" secondItem="lDU-Ac-0gy" secondAttribute="bottom" constant="34" id="ti1-Pf-99a"/>
                             <constraint firstItem="fY6-cy-gXS" firstAttribute="trailing" secondItem="Qpe-QF-K6I" secondAttribute="trailingMargin" id="vSK-rx-YD7"/>
                             <constraint firstItem="EGz-Xz-tT9" firstAttribute="leading" secondItem="gf3-H8-gqu" secondAttribute="leading" constant="30" id="wOd-u7-DFT"/>
                         </constraints>
@@ -250,6 +264,8 @@
     </scenes>
     <resources>
         <image name="Bakgrunden för 3d988988607b1053200cc052e8dd7bfb togs bort" width="360" height="360"/>
+        <image name="Bakgrunden för istockphoto-1055492242-170667a togs bort" width="384" height="448"/>
+        <image name="Bakgrunden för istockphoto-1055883492-170667a togs bort" width="397" height="434"/>
         <image name="Bakgrunden för png-clipart-cartoon-mobile-phone-s-purple-gadget togs bort" width="900" height="652"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
