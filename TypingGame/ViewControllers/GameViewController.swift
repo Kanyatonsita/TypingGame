@@ -28,7 +28,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         setGameRandomWord()
         
         timeDiff()
@@ -54,7 +54,6 @@ class GameViewController: UIViewController {
         }
     }
     
-   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == segueIDGOTOGameOver {
@@ -89,15 +88,14 @@ class GameViewController: UIViewController {
     func timeDiff() {
         
         if diff == "EASY" {
-            countdownTime = 20
+            countdownTime = 60
         }else if diff == "MEDIUM" {
-            countdownTime = 15
+            countdownTime = 40
         }else {
-            countdownTime = 10
+            countdownTime = 20
         }
     }
-    
 }
-    
+
 
 

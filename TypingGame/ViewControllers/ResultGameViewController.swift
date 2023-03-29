@@ -21,22 +21,19 @@ class ResultGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         playAgainButtonDesign()
         
-        
         youScore.text = "In setting: \(diffSetting) \nYour score: \(showYouScor)"
-        
         
         hiScore = UserDefaults.standard.integer(forKey: diffSetting)
         print(hiScore, diffSetting)
 
-        HighScoreLabel.text = "HighScore: \(hiScore) \nIn setting: \(diffSetting)"
+        HighScoreLabel.text = "In setting: \(diffSetting) \nHighScore: \(hiScore)"
 
         showHiScore()
       
     }
-    
-    
     
     @IBAction func playAgainButton(_ sender: UIButton) {
     }
@@ -51,11 +48,8 @@ class ResultGameViewController: UIViewController {
             hiScore = showYouScor
             UserDefaults.standard.set(hiScore, forKey: diffSetting)
             HighScoreLabel.text = "New HighScore: \(hiScore) \nIn setting: \(diffSetting)"
-                    }
-        
         }
-        
-        
     }
+}
     
 

@@ -32,7 +32,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
     }
     
-    
     @IBAction func goToGameButton(_ sender: UIButton) {
          performSegue(withIdentifier: segueIdGoToGame, sender: self)
         
@@ -41,7 +40,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func buttonDesign(){
         designButton.layer.cornerRadius = 15
     }
-    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
