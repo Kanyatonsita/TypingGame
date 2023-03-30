@@ -29,7 +29,7 @@ class ResultGameViewController: UIViewController {
         hiScore = UserDefaults.standard.integer(forKey: diffSetting)
         print(hiScore, diffSetting)
 
-        HighScoreLabel.text = "In setting: \(diffSetting) \nHighScore: \(hiScore)"
+        HighScoreLabel.text = "HighScore: \(hiScore) \nIn setting: \(diffSetting) "
 
         showHiScore()
       
