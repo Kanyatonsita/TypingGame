@@ -47,7 +47,7 @@ class ResultGameViewController: UIViewController {
         if showYouScor > hiScore{
             hiScore = showYouScor
             UserDefaults.standard.set(hiScore, forKey: diffSetting)
-            HighScoreLabel.text = "New HighScore: \(hiScore) \nIn setting: \(diffSetting)"
+            HighScoreLabel.text = "Wooohoo Good job!! \nNew HighScore: \(hiScore) \nIn setting: \(diffSetting)"
         }
     }
 }
